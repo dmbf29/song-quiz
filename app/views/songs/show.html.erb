@@ -4,4 +4,9 @@
   <p><%= @song.category %></p>
   <h2>Here are the reviews for this song:</h2>
   <%# # TODO: Add song's reviews. %>
+  <ul>
+    <% @song.reviews.each do |review| %>
+      <li><%= review.content %></li>
+    <% end %>
+  </ul>
 </div>

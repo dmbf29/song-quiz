@@ -1,9 +1,10 @@
+<!-- @song #=> <#Song: id: 18, title: "Hey jude", year: 1968, category: "rock">  -->
 <%= form_for @song do |f| %>
   <%= f.text_field :title %>
   <%= f.submit %>
 <% end %>
 <%#  %>
-<form action=" " method="patch">
-  <input type="text" name=" " value=" "/>
+<form action="/songs/18" method="patch">
+  <input type="text" name="songs[title]" value="Hey jude"/>
   <input type="submit" value="Update song"/>
 </form>
